@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: monospace;
+    background-color: #add8e6;
+}
+
+.topper {
+    font-size: 18px;
+    color: antiquewhite;
+    background-color: cadetblue;
+}
+
+.main-header {
+    padding: 1em;
+    font-size: 15px;
+    text-align: center;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: auto;
+    padding: 20px;
+}
+
+.main-container-item {
+    margin: 20px;
+}
+
+.input-form {
+    text-align: center;
+}
+
+.input-form-info {
+    font-size: 14px;
+    margin: 0;
+}
+
+.input-form-container {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 15px auto;
+}
+
+.input-form-label {
+    display: inline-block;
+    min-width: 30px;
+    margin-right: 0;
+    color: white;
+    background-color: cadetblue;
+}
+
+.input-form-pane {
+    flex-grow: 1;
+    min-width: 5px;
+}
+
+/* Style for X input field */
+.input-form-text-x {
+    width: 100%;
+    padding: 5px;
+}
+
+/* Style for Y checkbox container */
+.input-form-checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.input-form-container-checkbox {
+    margin: 15px auto;
+}
+
+/* Style for Y checkbox inputs */
+.input-form-checkbox-group input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Style for R input field */
+.input-form-text-r {
+    width: 100%;
+    padding: 5px;
+}
+
+.input-form-pane-buttons-button {
+    height: 27px;
+    width: 90px;
+    font-family: monospace;
+    color: antiquewhite;
+    background-color: cadetblue;
+    border: none;
+}
+
+.input-form-pane-buttons-button:hover {
+    background-color: gray;
+}
+
+.input-form-pane-buttons-button-submit {
+    margin-right: 10px;
+}
+
+.graph-canvas {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.input-form-hidden-r,
+.input-form-hidden-timezone,
+.input-form-hidden-clear {
+    display: none;
+}
+
+/* Added hover effect for selected R value button */
+.input-form-button-r-click {
+    border: 2px solid #33c7cc;
+}
+
+/* Style for buttons container */
+.input-form-pane-buttons-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+/* Style for result table */
+.result-table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.result-table-header {
+    background-color: aquamarine;
+}
+
+.result-table-coords-col {
+    width: 10%;
+}
+
+.result-table-time-col {
+    width: 25%;
+}
+
+.result-table-container {
+    flex-grow: 1;
+    overflow-y: scroll;
+    height: 220px;
+}
